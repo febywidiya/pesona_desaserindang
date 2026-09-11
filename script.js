@@ -11,21 +11,17 @@ document.addEventListener("DOMContentLoaded", function () {
     const galleryImages = document.querySelectorAll(".gallery-item img");
 
     galleryImages.forEach(function (image) {
-
         image.addEventListener("click", function () {
-
             if (this.style.transform === "scale(1.05)") {
                 this.style.transform = "scale(1)";
             } else {
                 this.style.transform = "scale(1.05)";
             }
-
         });
-
     });
 
-});
-// FORM ADUAN
+
+    // FORM ADUAN
     const ADUAN_SCRIPT_URL =
         "https://script.google.com/macros/s/AKfycbzROGv2ZQEvoxUoHd57DLXNNBZoqdY2sZ93XTLyyTkB-FxP0Y6ymRmu1b9IqsqCSKRo2w/exec";
 
@@ -73,3 +69,5 @@ document.addEventListener("DOMContentLoaded", function () {
             }
         });
     }
+
+});
