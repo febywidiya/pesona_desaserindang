@@ -231,7 +231,90 @@
 
     </section>
 
+<!-- SECTION ADUAN -->
+<section class="aduan-section" id="aduan">
+    <div class="aduan-container">
 
+        <div class="aduan-heading">
+            <span class="section-label">LAYANAN MASYARAKAT</span>
+            <h2>Sampaikan Aduan Anda</h2>
+            <p>
+                Sampaikan laporan, kritik, atau saran untuk membantu
+                meningkatkan kenyamanan dan pelayanan di Desa Serindang.
+            </p>
+        </div>
+
+        <form id="aduanForm" class="aduan-form">
+
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="nama">Nama</label>
+                    <input
+                        type="text"
+                        id="nama"
+                        name="nama"
+                        placeholder="Masukkan nama Anda"
+                        required
+                    >
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="Masukkan email Anda"
+                        required
+                    >
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="kategori">Kategori Aduan</label>
+                <select id="kategori" name="kategori" required>
+                    <option value="">Pilih kategori</option>
+                    <option value="Infrastruktur">Infrastruktur</option>
+                    <option value="Lingkungan">Lingkungan</option>
+                    <option value="Fasilitas Umum">Fasilitas Umum</option>
+                    <option value="Pelayanan Desa">Pelayanan Desa</option>
+                    <option value="Keamanan">Keamanan</option>
+                    <option value="Lainnya">Lainnya</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="judul">Judul Aduan</label>
+                <input
+                    type="text"
+                    id="judul"
+                    name="judul"
+                    placeholder="Contoh: Jalan desa rusak"
+                    required
+                >
+            </div>
+
+            <div class="form-group">
+                <label for="deskripsi">Deskripsi Aduan</label>
+                <textarea
+                    id="deskripsi"
+                    name="deskripsi"
+                    rows="5"
+                    placeholder="Jelaskan aduan atau saran Anda..."
+                    required
+                ></textarea>
+            </div>
+
+            <button type="submit" class="btn-aduan">
+                Kirim Aduan →
+            </button>
+
+            <p id="aduanMessage"></p>
+
+        </form>
+    </div>
+</section>
+    
     <!-- FOOTER -->
     <footer>
 
